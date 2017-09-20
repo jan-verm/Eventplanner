@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ugent.eventplanner"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:maxSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PersonListActivity"
+            android:label="@string/title_activity_people" >
+        </activity>
+        <activity
+            android:name=".EventsListActivity"
+            android:label="@string/title_activity_events" >
+        </activity>
+        <activity
+            android:name=".PersonActivity"
+            android:label="@string/title_activity_person" >
+        </activity>
+        <activity
+            android:name=".EventActivity"
+            android:label="@string/title_activity_event" >
+        </activity>
+        <activity
+            android:name=".NewEventActivity"
+            android:label="@string/title_activity_new_event" >
+        </activity>
+        <activity
+            android:name=".AddAttendantActivity"
+            android:label="@string/title_activity_new_attendant" >
+        </activity>
+        <activity
+            android:name=".AddMessageActivity"
+            android:label="@string/title_activity_new_comment" >
+        </activity>
+        <activity
+            android:name=".EditEventActivity"
+            android:label="@string/title_activity_edit_event" >
+        </activity>
+        <activity
+            android:name=".NewPersonActivity"
+            android:label="@string/title_activity_new_person" >
+        </activity>
+        <activity
+            android:name=".EditPersonActivity"
+            android:label="@string/title_activity_edit_person" >
+        </activity>
+    </application>
+
+</manifest>
